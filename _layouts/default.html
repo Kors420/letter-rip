@@ -100,8 +100,8 @@
             </div>
           </div>
 
-      <!-- Single Clean Comic Navigation -->
-          <div class="comic-nav" style="margin: 20px 0 30px 0; text-align: center;">
+     <!-- Comic Navigation Buttons -->
+          <div class="comic-nav" style="margin: 20px 0 10px 0; text-align: center;">
             {% if site.posts.last %}
               <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
             {% endif %}
@@ -112,8 +112,6 @@
               <span style="color: #ccc; margin: 0 10px;">Previous</span>
             {% endif %}
 
-            <a href="{{ site.baseurl }}/archive.html">Archive</a>
-
             {% if page.next.url %}
               <a href="{{ site.baseurl }}{{ page.next.url }}">Next</a>
             {% else %}
@@ -123,6 +121,11 @@
             {% if site.posts.first %}
               <a href="{{ site.baseurl }}{{ site.posts.first.url }}">Last</a>
             {% endif %}
+          </div>
+
+          <!-- Separate Archive Link Below Buttons -->
+          <div style="margin-bottom: 30px; text-align: center;">
+            <a href="{{ site.baseurl }}/archive.html" style="font-family: 'Korsgaard', sans-serif; font-size: 20px; font-weight: bold; color: #424142; text-decoration: none;">Archive</a>
           </div>
 
       <!-- Mailing List Section -->
