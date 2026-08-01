@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -12,38 +12,39 @@
 
     <style>
       @font-face {
-        font-family: 'Korsgaard';
-        src: url('{{ site.baseurl }}/fonts/Korsgaard_font-Regular.ttf') format('truetype');
+        font-family: "Korsgaard";
+        src: url("{{ site.baseurl }}/fonts/Korsgaard_font-Regular.ttf") format("truetype");
         font-weight: normal;
         font-style: normal;
       }
       body {
         background-color: #f4f1ea;
-        background-image: url('{{ site.baseurl }}/images/bg-texture.png');
+        background-image: url("{{ site.baseurl }}/images/bg-texture.png");
         background-repeat: repeat;
-        font-family: 'Korsgaard', sans-serif;
+        font-family: "Korsgaard", sans-serif;
         color: #424142;
         padding-top: 20px;
       }
       .jumbotron {
-        background-image: url('{{ site.baseurl }}/images/header-bg.png') !important;
+        background-image: url("{{ site.baseurl }}/images/header-bg.png") !important;
         background-repeat: repeat !important;
         text-align: center;
-        padding: 40px 0;
+        padding: 5px 0 !important;
       }
       .jumbotron h1 {
-        font-family: 'Korsgaard', sans-serif;
-        font-size: 84px !important;
+        font-family: "Korsgaard", sans-serif;
+        font-size: 60px !important;
         color: #424142;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
       .jumbotron a {
         text-decoration: none;
       }
       .jumbotron p {
-        font-family: 'Korsgaard', sans-serif;
-        font-size: 30px !important;
+        font-family: "Korsgaard", sans-serif;
+        font-size: 22px !important;
         color: #424142;
+        margin-bottom: 0;
       }
       .comic-panel {
         max-width: 700px;
@@ -61,7 +62,7 @@
         text-align: center;
       }
       .comic-nav a {
-        font-family: 'Korsgaard', sans-serif;
+        font-family: "Korsgaard", sans-serif;
         font-size: 20px;
         font-weight: bold;
         margin: 0 10px;
@@ -73,7 +74,7 @@
       }
       .site-footer {
         padding: 20px 0;
-        font-family: 'Korsgaard', sans-serif;
+        font-family: "Korsgaard", sans-serif;
         text-align: center;
       }
       .footer-links a {
@@ -84,7 +85,6 @@
       }
     </style>
   </head>
-
   <body>
     <div class="container">
       <div class="row">
@@ -92,43 +92,33 @@
           <a href="{{ site.baseurl }}/"><h1>Letter Rip</h1></a>
           <p>Single Panel Gag Cartoons</p>
         </div>
-
         <div class="col-md-12 center">
           <div class="panel center col-md-12" style="background: transparent; border: none; box-shadow: none;">
             <div class="comic-panel center">
               {{ content }}
             </div>
           </div>
-
-     <!-- Comic Navigation Buttons -->
           <div class="comic-nav" style="margin: 20px 0 10px 0; text-align: center;">
             {% if site.posts.last %}
               <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
             {% endif %}
-            
             {% if page.previous.url %}
               <a href="{{ site.baseurl }}{{ page.previous.url }}">Previous</a>
             {% else %}
               <span style="color: #ccc; margin: 0 10px;">Previous</span>
             {% endif %}
-
             {% if page.next.url %}
               <a href="{{ site.baseurl }}{{ page.next.url }}">Next</a>
             {% else %}
               <span style="color: #ccc; margin: 0 10px;">Next</span>
             {% endif %}
-
             {% if site.posts.first %}
               <a href="{{ site.baseurl }}{{ site.posts.first.url }}">Last</a>
             {% endif %}
           </div>
-
-          <!-- Separate Archive Link Below Buttons -->
           <div style="margin-bottom: 30px; text-align: center;">
-            <a href="{{ site.baseurl }}/archive.html" style="font-family: 'Korsgaard', sans-serif; font-size: 20px; font-weight: bold; color: #424142; text-decoration: none;">Archive</a>
+            <a href="{{ site.baseurl }}/archive.html" style="font-family: "Korsgaard", sans-serif; font-size: 20px; font-weight: bold; color: #424142; text-decoration: none;">Archive</a>
           </div>
-
-      <!-- Mailing List Section -->
       <div class="row">
         <div class="col-xs-12 col-md-8 col-md-offset-2">
           <div style="margin-top: 20px; padding: 20px 0; border-top: 1px solid #ddd; text-align: center;">
@@ -137,7 +127,7 @@
                 Posted on <span style="font-family: Arial, sans-serif !important; font-size: 14px !important;">{{ page.date | date: "%B %d, %Y" }}</span>
               </p>
             {% endif %}
-            <h4 style="font-family: 'Korsgaard', sans-serif; font-weight: bold; margin-bottom: 8px; color: #333;">
+            <h4 style="font-family: "Korsgaard", sans-serif; font-weight: bold; margin-bottom: 8px; color: #333;">
               Get the latest cartoons in your inbox
             </h4>
             <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
@@ -147,12 +137,11 @@
               <div class="form-group">
                 <input type="email" name="email" class="form-control" placeholder="your.email@example.com" style="min-width: 260px; height: 42px; font-size: 15px;" required />
               </div>
-              <input type="submit" value="Subscribe" class="btn btn-primary" style="height: 42px; font-family: 'Korsgaard', sans-serif; font-weight: bold; font-size: 16px; padding: 0 20px; margin-left: 5px;" />
+              <input type="submit" value="Subscribe" class="btn btn-primary" style="height: 42px; font-family: "Korsgaard", sans-serif; font-weight: bold; font-size: 16px; padding: 0 20px; margin-left: 5px;" />
             </form>
           </div>
         </div>
       </div>
-
       <hr>
       <footer class="site-footer">
         <div class="row">
@@ -171,4 +160,4 @@
       </footer>
     </div>
   </body>
-</html>
+</html>' > _layouts/default.html
