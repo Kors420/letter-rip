@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Eat Like Crap
-date: 2026-06-289
+date: 2026-06-29
 permalink: /0003/
 ---
 
