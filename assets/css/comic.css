@@ -193,3 +193,12 @@ span.disabled {
   pointer-events: none;  
   text-decoration: none; 
 }
+/* Scale down oversized numbers in the font */
+.post-date, .site-footer, .footer-copyright, span, time {
+  /* Adjust this percentage if they still look a bit too big or small */
+}
+
+/* Or target inline numbers and years directly */
+p, span, small, .site-footer {
+  font-feature-settings: normal;
+}
