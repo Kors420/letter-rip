@@ -1,18 +1,23 @@
 /* ==========================================================================
-   1. REGISTER HAND-DRAWN FONTS GLOBALLY
+   1. REGISTER HAND-DRAWN FONTS SEPARATELY
    ========================================================================== */
 @font-face {
   font-family: 'Korsgaard';
-  src: url('../fonts/Korsgaard_font-Regular.ttf') format('truetype');
+  src: url('/fonts/Korsgaard_font-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'KorsgaardNumbers';
-  src: url('../fonts/Korsgaard_numbers-Regular.ttf') format('truetype');
+  src: url('/fonts/Korsgaard_numbers-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+/* Helper class to force your drawn numbers anywhere you need them */
+.korsgaard-num, .comic-nav, .first-comic, .previous-comic, .comic-next {
+  font-family: 'KorsgaardNumbers', sans-serif !important;
 }
 
 /* ==========================================================================
@@ -26,18 +31,18 @@
 }
 
 .jumbotron h1 {
-  font-size: 84px !important; /* Huge commanding presence for main title */
+  font-size: 84px !important;
   margin-bottom: 10px !important;
   line-height: 1.1 !important;
 }
 
 .jumbotron p {
-  font-size: 30px !important; /* Scaled subheader text */
+  font-size: 30px !important;
   letter-spacing: 1px !important;
 }
 
 .navbar-nav li a {
-  font-size: 24px !important; /* Prominent top ARCHIVE link size */
+  font-size: 24px !important;
   font-weight: bold !important;
 }
 
@@ -50,13 +55,11 @@ body {
   color: #424142;
   padding-top: 20px;
   
-  /* Texture blankets the entire screen background */
   background-image: url(../images/bg-texture.png);
   background-repeat: repeat;
-  background-color: #f4f1ea; /* Warm off-white fallback color */
+  background-color: #f4f1ea;
 }
 
-/* Structural containers are transparent so the texture flows through everything */
 .panel {
   background-color: transparent !important;
   border: none !important;
@@ -87,7 +90,6 @@ body {
    4. HEADER & NAVIGATION STYLES
    ========================================================================== */
 .jumbotron {
-  /* Loads your newly designed darker texture block for the header background */
   background-image: url(../images/header-bg.png) !important;
   background-repeat: repeat !important;
 }
@@ -117,7 +119,6 @@ body {
   display: inline-block;
   float: none;
   vertical-align: top;
-  margin-bottom: none;
 }
 
 .navbar .navbar-nav {
@@ -132,7 +133,7 @@ body {
 }
 
 /* ==========================================================================
-   5. COMIC PANEL STYLES (STRICT CENTERING & SCALING)
+   5. COMIC PANEL STYLES
    ========================================================================== */
 .comic-panel {
   max-width: 700px;
@@ -141,7 +142,6 @@ body {
   text-align: center;
 }
 
-/* Base styling for any fallback images in standard layout panels */
 .panel img {
   max-width: 100% !important;
   height: auto !important;
@@ -149,16 +149,11 @@ body {
   margin: 0 auto;
 }
 
-/* Precise constraint rules specifically for your main cartoon image */
 .comic-panel img {
   display: block;
   margin: 0 auto;
-  /* Changed from width: 100% to allow natural proportional scaling */
   width: auto !important; 
   max-width: 100% !important; 
-  
-  /* Capping size cleanly without breaking aspect ratios */
-  max-width: 650px !important; 
   max-height: 85vh !important;
 }
 
@@ -203,8 +198,8 @@ body {
    ========================================================================== */
 .nav-btn.disabled,
 span.disabled {
-  opacity: 0.35;               /* Subtly fades out the button text */
-  cursor: not-allowed;          /* Changes the mouse cursor to show it's locked */
-  pointer-events: none;         /* Blocks any accidental clicks completely */
-  text-decoration: none;        /* Ensures no hover lines show up */
+  opacity: 0.35;         
+  cursor: not-allowed;   
+  pointer-events: none;  
+  text-decoration: none; 
 }
