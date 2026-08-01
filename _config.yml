@@ -1,3 +1,4 @@
+url: "https://letter-rip.com"
 baseurl: ""
 exclude:
   - Gemfile
