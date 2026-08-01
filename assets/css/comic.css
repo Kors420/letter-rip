@@ -1,0 +1,210 @@
+/* ==========================================================================
+   1. REGISTER HAND-DRAWN FONTS GLOBALLY
+   ========================================================================== */
+@font-face {
+  font-family: 'Korsgaard';
+  src: url('../fonts/Korsgaard_font-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KorsgaardNumbers';
+  src: url('../fonts/Korsgaard_numbers-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   2. GLOBAL TYPOGRAPHY OVERRIDES & SCALING
+   ========================================================================== */
+.jumbotron h1, 
+.jumbotron p, 
+.navbar .navbar-nav, 
+.navbar-nav li a {
+  font-family: 'Korsgaard', sans-serif !important;
+}
+
+.jumbotron h1 {
+  font-size: 84px !important; /* Huge commanding presence for main title */
+  margin-bottom: 10px !important;
+  line-height: 1.1 !important;
+}
+
+.jumbotron p {
+  font-size: 30px !important; /* Scaled subheader text */
+  letter-spacing: 1px !important;
+}
+
+.navbar-nav li a {
+  font-size: 24px !important; /* Prominent top ARCHIVE link size */
+  font-weight: bold !important;
+}
+
+/* ==========================================================================
+   3. MAIN SITE BODY & FULL-PAGE TEXTURE
+   ========================================================================== */
+body {
+  font-family: 'Korsgaard', sans-serif;
+  font-size: 15px;
+  color: #424142;
+  padding-top: 20px;
+  
+  /* Texture blankets the entire screen background */
+  background-image: url(../images/bg-texture.png);
+  background-repeat: repeat;
+  background-color: #f4f1ea; /* Warm off-white fallback color */
+}
+
+/* Structural containers are transparent so the texture flows through everything */
+.panel {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-height: 500px;
+}
+
+.panel p {
+  padding: 0px 25px 0px 25px;
+  font-family: 'Korsgaard', sans-serif;
+}
+
+.panel h1, .panel h2, .panel h3 {
+  font-family: 'Korsgaard', sans-serif;
+  padding: 0px 25px 0px 25px;
+}
+
+.panel h1 { font-size: 30px; font-weight: normal; }
+.panel h2 { font-size: 20px; font-weight: bold; }
+.panel h3 { font-size: 14px; font-weight: bold; }
+
+.center {
+  margin: auto;
+  float: none;
+}
+
+/* ==========================================================================
+   4. HEADER & NAVIGATION STYLES
+   ========================================================================== */
+.jumbotron {
+  /* Loads your newly designed darker texture block for the header background */
+  background-image: url(../images/header-bg.png) !important;
+  background-repeat: repeat !important;
+}
+
+.container .jumbotron {
+  padding: 40px 0px 40px 0px;
+  text-align: center;
+}
+
+.jumbotron img {
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron a, .jumbotron a:visited {
+  color: #424142;
+  text-decoration: none;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.navbar .navbar-default {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin-bottom: none;
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* ==========================================================================
+   5. COMIC PANEL STYLES (STRICT CENTERING & SCALING)
+   ========================================================================== */
+.comic-panel {
+  max-width: 700px;
+  margin: 0 auto !important;
+  float: none !important;
+  text-align: center;
+}
+
+/* Base styling for any fallback images in standard layout panels */
+.panel img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Precise constraint rules specifically for your main cartoon image */
+.comic-panel img {
+  display: block;
+  margin: 0 auto;
+  /* Changed from width: 100% to allow natural proportional scaling */
+  width: auto !important; 
+  max-width: 100% !important; 
+  
+  /* Capping size cleanly without breaking aspect ratios */
+  max-width: 650px !important; 
+  max-height: 85vh !important;
+}
+
+/* ==========================================================================
+   6. ARCHIVE & FOOTER STYLES
+   ========================================================================== */
+.archive-li {
+  display: block;
+}
+
+.archive-ul {
+  margin: 0px;
+  list-style: none;
+}
+
+.site-footer {
+  padding: 20px 0;
+  font-family: 'Korsgaard', sans-serif !important;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  color: #333;
+  font-family: 'Korsgaard', sans-serif !important;
+  font-size: 18px;
+}
+
+.footer-links a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  color: #777;
+  font-size: 14px;
+  margin-top: 15px;
+  font-family: 'Korsgaard', sans-serif !important;
+}
+
+/* ==========================================================================
+   7. DYNAMIC NAVIGATION BUTTON UTILITIES
+   ========================================================================== */
+.nav-btn.disabled,
+span.disabled {
+  opacity: 0.35;               /* Subtly fades out the button text */
+  cursor: not-allowed;          /* Changes the mouse cursor to show it's locked */
+  pointer-events: none;         /* Blocks any accidental clicks completely */
+  text-decoration: none;        /* Ensures no hover lines show up */
+}

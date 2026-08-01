@@ -1,14 +1,168 @@
----
----
 <!DOCTYPE html>
-<html>
-  {% include head.html %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/comic.css" rel="stylesheet">
+
+    <style>
+      @font-face {
+        font-family: 'Korsgaard';
+        src: url('{{ site.baseurl }}/fonts/Korsgaard_font-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        background-color: #f4f1ea;
+        background-image: url('{{ site.baseurl }}/images/bg-texture.png');
+        background-repeat: repeat;
+        font-family: 'Korsgaard', sans-serif;
+        color: #424142;
+        padding-top: 20px;
+      }
+      .jumbotron {
+        background-image: url('{{ site.baseurl }}/images/header-bg.png') !important;
+        background-repeat: repeat !important;
+        text-align: center;
+        padding: 40px 0;
+      }
+      .jumbotron h1 {
+        font-family: 'Korsgaard', sans-serif;
+        font-size: 84px !important;
+        color: #424142;
+        margin-bottom: 10px;
+      }
+      .jumbotron a {
+        text-decoration: none;
+      }
+      .jumbotron p {
+        font-family: 'Korsgaard', sans-serif;
+        font-size: 30px !important;
+        color: #424142;
+      }
+      .comic-panel {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .comic-panel img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+      }
+      .comic-nav {
+        margin: 15px 0;
+        text-align: center;
+      }
+      .comic-nav a {
+        font-family: 'Korsgaard', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 10px;
+        color: #424142;
+        text-decoration: none;
+      }
+      .comic-nav a:hover {
+        text-decoration: underline;
+      }
+      .site-footer {
+        padding: 20px 0;
+        font-family: 'Korsgaard', sans-serif;
+        text-align: center;
+      }
+      .footer-links a {
+        margin: 0 15px;
+        color: #333;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
   <body>
-    <main class="wrap">
-      {% include header.html %}
-      {% include navigation.html %}
-      {{ content }}
-    </main>
-      {% include footer.html %}
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron">
+          <a href="{{ site.baseurl }}/"><h1>Letter Rip</h1></a>
+          <p>Single Panel Gag Cartoons</p>
+        </div>
+
+        <div class="col-md-12 center">
+          <div class="panel center col-md-12" style="background: transparent; border: none; box-shadow: none;">
+            <div class="comic-panel center">
+              {{ content }}
+            </div>
+          </div>
+
+          <!-- Bottom Navigation Buttons (First, Previous, Next, Last) -->
+          <div class="comic-nav" style="margin-bottom: 30px;">
+            {% if site.posts.last %}
+              <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
+            {% endif %}
+            {% if page.previous.url %}
+              <a href="{{ site.baseurl }}{{ page.previous.url }}">Previous</a>
+            {% else %}
+              <span style="color: #ccc; margin: 0 10px; font-size: 20px;">Previous</span>
+            {% endif %}
+            {% if page.next.url %}
+              <a href="{{ site.baseurl }}{{ page.next.url }}">Next</a>
+            {% else %}
+              <span style="color: #ccc; margin: 0 10px; font-size: 20px;">Next</span>
+            {% endif %}
+            {% if site.posts.first %}
+              <a href="{{ site.baseurl }}{{ site.posts.first.url }}">Last</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Mailing List Section -->
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div style="margin-top: 20px; padding: 20px 0; border-top: 1px solid #ddd; text-align: center;">
+            {% if page.date %}
+              <p style="color: #888; font-size: 14px; margin-bottom: 15px;">
+                Posted on {{ page.date | date: "%B %d, %Y" }}
+              </p>
+            {% endif %}
+            <h4 style="font-family: 'Korsgaard', sans-serif; font-weight: bold; margin-bottom: 8px; color: #333;">
+              Get the latest cartoons in your inbox
+            </h4>
+            <p style="color: #666; font-size: 14px; margin-bottom: 20px;">
+              New single-panel gag updates every month.
+            </p>
+            <form action="https://buttondown.email/api/emails/embed-subscribe/letter-rip" method="post" target="popupwindow" class="form-inline">
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="your.email@example.com" style="min-width: 260px; height: 42px; font-size: 15px;" required />
+              </div>
+              <input type="submit" value="Subscribe" class="btn btn-primary" style="height: 42px; font-family: 'Korsgaard', sans-serif; font-weight: bold; font-size: 16px; padding: 0 20px; margin-left: 5px;" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <footer class="site-footer">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="footer-links">
+              <a href="https://www.instagram.com/letter_rip_comic/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+              <a href="https://bsky.app/profile/letter-rip-comic.bsky.social" target="_blank"><i class="fa fa-cloud"></i> Bluesky</a>
+              <a href="https://globalcomix.com/c/letter-rip" target="_blank"><i class="fa fa-book"></i> GlobalComix</a>
+              <a href="mailto:3korsgaard@gmail.com"><i class="fa fa-envelope"></i> Contact</a>
+            </p>
+            <p style="color: #777; font-size: 14px; margin-top: 15px;">
+              &copy; 2026 Letter Rip. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

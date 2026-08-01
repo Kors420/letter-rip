@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Archive"
+permalink: /archive
+---
+
+<div class="row">
+  <div class="col-md-12 text-center" style="margin-top: 20px;">
+    <h2 style="font-family: 'Korsgaard', sans-serif; font-weight: bold; font-size: 36px; margin-bottom: 30px;">Comic Archive</h2>
+    
+    <ul style="list-style: none; padding: 0; font-family: 'Korsgaard', sans-serif; font-size: 22px;">
+      {% for post in site.posts %}
+        <li style="margin-bottom: 15px;">
+          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #424142; text-decoration: none;">
+            {{ post.date | date: "%B %d, %Y" }} — <strong>{{ post.title }}</strong>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
