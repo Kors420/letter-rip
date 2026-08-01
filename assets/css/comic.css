@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. REGISTER HAND-DRAWN FONTS SEPARATELY
+   1. REGISTER HAND-DRAWN FONT
    ========================================================================== */
 @font-face {
   font-family: 'Korsgaard';
@@ -8,49 +8,32 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'KorsgaardNumbers';
-  src: url('/fonts/Korsgaard_numbers-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Helper class to force your drawn numbers anywhere you need them */
-.korsgaard-num, .comic-nav, .first-comic, .previous-comic, .comic-next {
-  font-family: 'KorsgaardNumbers', sans-serif !important;
-}
-
 /* ==========================================================================
-   2. GLOBAL TYPOGRAPHY OVERRIDES & SCALING
+   2. GLOBAL TYPOGRAPHY & BODY STYLES
    ========================================================================== */
+body, 
 .jumbotron h1, 
 .jumbotron p, 
 .navbar .navbar-nav, 
-.navbar-nav li a {
+.navbar-nav li a,
+.panel p, 
+.panel h1, 
+.panel h2, 
+.panel h3,
+.comic-nav, 
+.first-comic, 
+.previous-comic, 
+.comic-next,
+.site-footer,
+.footer-links a,
+.footer-copyright {
   font-family: 'Korsgaard', sans-serif !important;
-}
-
-.jumbotron h1 {
-  font-size: 84px !important;
-  margin-bottom: 10px !important;
-  line-height: 1.1 !important;
-}
-
-.jumbotron p {
-  font-size: 30px !important;
-  letter-spacing: 1px !important;
-}
-
-.navbar-nav li a {
-  font-size: 24px !important;
-  font-weight: bold !important;
 }
 
 /* ==========================================================================
    3. MAIN SITE BODY & FULL-PAGE TEXTURE
    ========================================================================== */
 body {
-  font-family: 'Korsgaard', sans-serif;
   font-size: 15px;
   color: #424142;
   padding-top: 20px;
@@ -67,13 +50,7 @@ body {
   min-height: 500px;
 }
 
-.panel p {
-  padding: 0px 25px 0px 25px;
-  font-family: 'Korsgaard', sans-serif;
-}
-
-.panel h1, .panel h2, .panel h3 {
-  font-family: 'Korsgaard', sans-serif;
+.panel p, .panel h1, .panel h2, .panel h3 {
   padding: 0px 25px 0px 25px;
 }
 
@@ -109,6 +86,17 @@ body {
   text-decoration: none;
 }
 
+.jumbotron h1 {
+  font-size: 84px !important;
+  margin-bottom: 10px !important;
+  line-height: 1.1 !important;
+}
+
+.jumbotron p {
+  font-size: 30px !important;
+  letter-spacing: 1px !important;
+}
+
 .navbar {
   margin-bottom: 0px;
   background-color: transparent !important;
@@ -126,6 +114,11 @@ body {
   display: inline-block;
   float: none;
   vertical-align: top;
+}
+
+.navbar-nav li a {
+  font-size: 24px !important;
+  font-weight: bold !important;
 }
 
 .navbar .navbar-collapse {
@@ -171,13 +164,11 @@ body {
 
 .site-footer {
   padding: 20px 0;
-  font-family: 'Korsgaard', sans-serif !important;
 }
 
 .footer-links a {
   margin: 0 15px;
   color: #333;
-  font-family: 'Korsgaard', sans-serif !important;
   font-size: 18px;
 }
 
@@ -190,7 +181,6 @@ body {
   color: #777;
   font-size: 14px;
   margin-top: 15px;
-  font-family: 'Korsgaard', sans-serif !important;
 }
 
 /* ==========================================================================
