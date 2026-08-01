@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Butt-Dialed"
 date: 2026-06-27
 permalink: /0001/
