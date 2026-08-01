@@ -11,9 +11,7 @@ permalink: /archive
     <ul style="list-style: none; padding: 0; font-family: 'Korsgaard', sans-serif; font-size: 22px;">
       {% for post in site.posts %}
         <li style="margin-bottom: 15px;">
-          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #424142; text-decoration: none;">
-            {{ post.date | date: "%B %d, %Y" }} — <strong>{{ post.title }}</strong>
-          </a>
+          <a href="{{ site.baseurl }}{{ post.url }}" style="color: #424142; text-decoration: none;">{{ post.title }}</a>
         </li>
       {% endfor %}
     </ul>
