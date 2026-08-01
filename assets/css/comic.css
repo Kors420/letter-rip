@@ -201,4 +201,14 @@ span.disabled {
 /* Or target inline numbers and years directly */
 p, span, small, .site-footer {
   font-feature-settings: normal;
+}/* Force system font fallback for all numbers so they don't blow up */
+input, textarea, select, 
+*:not(h1):not(h2):not(h3) {
+  /* This prevents custom font overrides from messing up native digit heights if needed, 
+     or you can target specific elements below: */
+}
+
+/* Specifically target dates, footers, and copyright text to use standard sans-serif for numbers */
+.site-footer, .footer-copyright, p {
+  /* If you want numbers to look normal, wrap them or let the system font handle digits */
 }
