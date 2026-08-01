@@ -100,21 +100,20 @@
             </div>
           </div>
 
-          <!-- Bottom Navigation Buttons (First, Previous, Next, Last) -->
+          <!-- Bottom Navigation Links -->
           <div class="comic-nav" style="margin-bottom: 30px;">
             {% if site.posts.last %}
               <a href="{{ site.baseurl }}{{ site.posts.last.url }}">First</a>
             {% endif %}
+            
             {% if page.previous.url %}
               <a href="{{ site.baseurl }}{{ page.previous.url }}">Previous</a>
-            {% else %}
-              <span style="color: #ccc; margin: 0 10px; font-size: 20px;">Previous</span>
             {% endif %}
+            
             {% if page.next.url %}
               <a href="{{ site.baseurl }}{{ page.next.url }}">Next</a>
-            {% else %}
-              <span style="color: #ccc; margin: 0 10px; font-size: 20px;">Next</span>
             {% endif %}
+            
             {% if site.posts.first %}
               <a href="{{ site.baseurl }}{{ site.posts.first.url }}">Last</a>
             {% endif %}
