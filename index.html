@@ -1,11 +1,10 @@
 ---
 layout: default
 title: home
-sidebar: true
 ---
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-12 text-center">
     {% for post in site.posts limit:1 %}
       {{ post.content }}
     {% endfor %}
