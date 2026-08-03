@@ -1,0 +1,8 @@
+---
+layout: default
+title: New Pope
+date: 2026-07-01
+permalink: /0005/
+---
+
+![New Pope](/images/new_pope_e_korsgaard.jpg)
