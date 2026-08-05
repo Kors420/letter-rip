@@ -1,0 +1,8 @@
+---
+layout: default
+title: Summoned
+date: 2026-07-06
+permalink: /0010/
+---
+
+![Summoned](/images/summoned_with_an_app_e_korsgaard.jpg)

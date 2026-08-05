@@ -1,0 +1,8 @@
+---
+layout: default
+title: Lancelot
+date: 2026-07-08
+permalink: /0012/
+---
+
+![Lancelot](/images/lancelot_duty_e_korsgaard.jpg)
