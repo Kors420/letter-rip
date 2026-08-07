@@ -1,0 +1,8 @@
+---
+layout: default
+title: Tapestry
+date: 2026-08-09
+permalink: /0044/
+---
+
+![Tapestry](/images/tapestry_color_e_korsgaard.jpg)

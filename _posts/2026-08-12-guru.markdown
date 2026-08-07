@@ -1,0 +1,8 @@
+---
+layout: default
+title: Guru
+date: 2026-08-12
+permalink: /0047/
+---
+
+![Guru](/images/guru_e_korsgaard_colors.jpg)

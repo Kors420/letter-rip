@@ -1,0 +1,8 @@
+---
+layout: default
+title: Sigmund
+date: 2026-08-14
+permalink: /0049/
+---
+
+![Sigmund](/images/sigmund_e_korsgaard.jpg)

@@ -1,0 +1,8 @@
+---
+layout: default
+title: Into This
+date: 2026-08-16
+permalink: /0051/
+---
+
+![Into This](/images/into_this_e_korsgaard.jpg)
