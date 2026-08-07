@@ -1,0 +1,8 @@
+---
+layout: default
+title: Light Up
+date: 2026-07-14
+permalink: /0018/
+---
+
+![Light Up](/images/light_up_the_room_e_korsgaard.jpg)

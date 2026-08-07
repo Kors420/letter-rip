@@ -1,0 +1,8 @@
+---
+layout: default
+title: Old Ways
+date: 2026-07-12
+permalink: /0016/
+---
+
+![Old Ways](/images/old_ways_by_e_korsgaard.jpg)
