@@ -1,0 +1,8 @@
+---
+layout: default
+title: Warm Up
+date: 2026-08-20
+permalink: /0055/
+---
+
+![Warm Up](/images/warm_up_e_korsgaard.jpg)

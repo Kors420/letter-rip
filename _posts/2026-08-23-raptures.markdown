@@ -1,0 +1,8 @@
+---
+layout: default
+title: Raptures
+date: 2026-08-23
+permalink: /0058/
+---
+
+![Raptures](/images/raptures_e_korsgaard.jpg)

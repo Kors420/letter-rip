@@ -1,0 +1,8 @@
+---
+layout: default
+title: Oog
+date: 2026-08-29
+permalink: /0064/
+---
+
+![Oog](/images/oog_e_korsgaard.jpg)

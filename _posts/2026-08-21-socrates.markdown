@@ -1,0 +1,8 @@
+---
+layout: default
+title: Socrates
+date: 2026-08-21
+permalink: /0056/
+---
+
+![Socrates](/images/socrates_e_korsgaard.jpg)
