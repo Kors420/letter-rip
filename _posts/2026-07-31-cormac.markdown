@@ -1,0 +1,8 @@
+---
+layout: default
+title: Cormac
+date: 2026-07-31
+permalink: /0035/
+---
+
+![Cormac](/images/cormac_e_korsgaard.jpg)
