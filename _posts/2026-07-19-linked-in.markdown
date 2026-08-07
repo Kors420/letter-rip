@@ -1,0 +1,8 @@
+---
+layout: default
+title: LinkedIn Post
+date: 2026-07-19
+permalink: /0023/
+---
+
+![LinkedIn Post](/images/linkedin_post_e_korsgaard.jpg)
