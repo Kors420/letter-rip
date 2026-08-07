@@ -10,3 +10,5 @@ defaults:
       type: "posts"
     values:
       layout: "default"
+
+future: true
