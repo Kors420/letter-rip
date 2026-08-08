@@ -1,0 +1,8 @@
+---
+layout: default
+title: Ambienvert
+date: 2026-09-01
+permalink: /0066/
+---
+
+![Ambienvert](/images/ambien_e_korsgaard.jpg)
