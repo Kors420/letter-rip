@@ -1,0 +1,8 @@
+---
+layout: default
+title: Roadshow
+date: 2026-09-02
+permalink: /0067/
+---
+
+![Roadshow](/images/roadshow_e_korsgaard_web.jpg)
