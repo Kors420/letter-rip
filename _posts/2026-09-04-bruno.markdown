@@ -1,0 +1,8 @@
+---
+layout: default
+title: Bruno
+date: 2026-09-04
+permalink: /0069/
+---
+
+![Bruno](/images/bruno_e_korsgaard.jpg)
