@@ -5,4 +5,4 @@ date: 2026-09-06
 permalink: /0071/
 ---
 
-![Conversion](/images/creature_e_korsgaard_webcomic.jpg)
+![Creature](/images/creature_e_korsgaard_webcomic.jpg)
