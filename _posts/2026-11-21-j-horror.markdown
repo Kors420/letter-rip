@@ -1,0 +1,8 @@
+---
+layout: default
+title: Get out More
+date: 2026-11-21
+permalink: /0080/
+---
+
+![J-horror](/images/j_horror_ghost_e_korsgaard_color.jpg)

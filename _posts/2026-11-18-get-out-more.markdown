@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Emotional Labor
+title: Get out More
 date: 2026-11-12
 permalink: /0079/
 ---
