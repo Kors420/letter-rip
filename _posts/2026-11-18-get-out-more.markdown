@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Get out More
+title: Get Out More
 date: 2026-11-12
 permalink: /0079/
 ---

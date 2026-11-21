@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Get out More
+title: J-horror
 date: 2026-11-21
 permalink: /0080/
 ---
